@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+  background-color: black;
+}
+.main{
+  height: 80vh;
+  background-image: url(imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid rgb(63, 58, 58);
+
+}
+.box{
+  height: 80vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+}
+nav{
+  padding-top: 8px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 80vw;
+  height: 60px;
+  z-index: 10;
+}
+.img-div{
+  display: flex;
+  align-items: center;
+}
+.right-header{
+  display: flex;
+  align-items: center;
+}
+.right-header select{
+  font-size: 17px;
+  padding: 3px 15px 6px 15px;
+  color: white;
+  background-color: rgba(24, 21, 21, 0.7);
+  margin-right: 20px;
+  border: 2px solid rgb(54, 52, 52);
+  border-radius: 4px;
+}
+.right-header button{
+  font-size: 17px;
+  padding: 3px 13px 6px 13px;
+  border-radius: 4px;
+  background-color: rgb(200, 3, 3);
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+
+}
+nav img{
+  height: 40px;
+}
+.hero{
+  text-align: center;
+  width: 90%;
+  height: 80%;
+  margin: 10px auto 0 auto ;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+h1{
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.hero span{
+  font-size: 1.2em;
+}
+.subs{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  gap:10px;
+}
+.subs input{
+  height: 46px;
+  width: 280px;
+  border-radius: 5px;
+  color:white;
+  background-color: rgba(24, 21, 21, 0.7);
+  font-size: 1.15rem;
+  border: 2px solid rgb(66, 62, 62);
+  padding-left: 7px;
+}
+.subs input::placeholder{
+  color: rgb(99, 106, 112);
+}
+.subs button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+  height: 50px;
+  width: 140px;
+  border-radius: 5px;
+  background-color: rgb(200, 3, 3);
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+.subs button:hover, .right-header button:hover{
+  background-color: rgb(161, 3, 3);
+  cursor: pointer;
+}
+.subs button:active, .right-header button:active{
+  background-color: rgb(122, 1, 1);
+  cursor: pointer;
+}
+.first,.second,.third,.forth{
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.second{
+  flex-direction: row-reverse;
+}
+.forth{
+  flex-direction: row-reverse;
+}
+.first-div-1,.second-div-1,.third-div-1,.forth-div-1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.first-heading,.second-heading,.third-heading,.forth-heading{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.tv-image{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tv-image video{
+  position: absolute;
+  width: 292px;
+  margin-bottom: 12px;
+}
+.tv-image img{
+  position: relative;
+  z-index: 1;
+  height: 300px;
+}
+hr{
+  height: 5px;
+  background-color: rgb(63, 58, 58);
+  border-style: solid;
+}
+.third .tv-image video{
+  width: 251px;
+  margin-bottom: 116px;
+} 
+.faq{
+  color: white;
+  padding: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.faq h2{
+  text-align: center;
+  margin: 20px;
+}
+.faq div{
+  font-size: 19px;
+  width: 90%;
+  margin: auto;
+  padding: 20px 20px;
+  background-color: rgba(64, 62, 62,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.4s;
+}
+.faq div svg{
+  color: white;
+}
+.faq div:hover{
+  background-color: rgba(64, 62, 62,1);
+  cursor: pointer;
+}
+@media(max-width: 769px){
+  .first,.second,.third,.forth{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    height: 500px;
+  }
+}
+@media(max-width: 520px){
+  .subs{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .subs input{
+    width: 80vw;
+  }
+  nav img,.right-header select,.right-header button{
+    transform: scale(0.8);
+  }
+}
